@@ -2,3 +2,21 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# .DS_Store
+.DS_Store
+Atega/.DS_Store
+Atega/Atega/
+Atega/Documentation/assets/.DS_Store
+Atega/Documentation/assets/css/.DS_Store
+Atega/Documentation/assets/img/.DS_Store
+_includes/.DS_Store
+_pages/.DS_Store
+_posts/.DS_Store
+_sass/.DS_Store
+_sass/1-tools/.DS_Store
+_sass/3-modules/.DS_Store
+_sass/4-layouts/.DS_Store
+images/.DS_Store
+	js/.DS_Store
+	js/vendors/.DS_Store
