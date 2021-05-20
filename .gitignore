@@ -4,6 +4,9 @@ _site/
 .jekyll-metadata
 
 # .DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
 .DS_Store
 Atega/.DS_Store
 Atega/Atega/
