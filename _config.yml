@@ -1,10 +1,10 @@
 #-------------------------------
 # General Site Settings
 title: Living That Data Life
-logo: # You can add own logo. For example '/images/logo.png'.
+logo: '/images/logos/Logo.png'.
 description: A Data Science Blog In Progress
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.livingthatdatalife.com"
 blog-theme: light # By default, Atega theme uses a 'light' color scheme, to change the color scheme to dark use 'dark' value (_includes/color-scheme)
 
 
@@ -67,19 +67,19 @@ disqus-identifier: # add your shortname for Disqus Comment. For example mr-brown
 # Gallery Footer Section
 gallery:
   title: Gallery
-  images:
-    - alt: 'Minimalism'
-      url: '/images/06.jpg'
-    - alt: 'Minimalism'
-      url: '/images/05.jpg'
-    - alt: 'Minimalism'
-      url: '/images/08.jpg'
-    - alt: 'Minimalism'
-      url: '/images/03.jpg'
-    - alt: 'Minimalism'
-      url: '/images/09.jpg'
-    - alt: 'Minimalism'
-      url: '/images/04.jpg'
+#  images:
+#    - alt: 'Minimalism'
+#      url: '/images/06.jpg'
+#    - alt: 'Minimalism'
+#      url: '/images/05.jpg'
+#    - alt: 'Minimalism'
+#      url: '/images/08.jpg'
+#    - alt: 'Minimalism'
+#      url: '/images/03.jpg'
+#    - alt: 'Minimalism'
+#      url: '/images/09.jpg'
+#    - alt: 'Minimalism'
+#      url: '/images/04.jpg'
 
 
 #-------------------------------
