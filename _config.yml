@@ -67,19 +67,19 @@ disqus-identifier: # add your shortname for Disqus Comment. For example mr-brown
 # Gallery Footer Section
 gallery:
   title: Gallery
-#  images:
-#    - alt: 'Minimalism'
-#      url: '/images/06.jpg'
-#    - alt: 'Minimalism'
-#      url: '/images/05.jpg'
-#    - alt: 'Minimalism'
-#      url: '/images/08.jpg'
-#    - alt: 'Minimalism'
-#      url: '/images/03.jpg'
-#    - alt: 'Minimalism'
-#      url: '/images/09.jpg'
-#    - alt: 'Minimalism'
-#      url: '/images/04.jpg'
+  images:
+    - alt: 'Minimalism'
+      url: '/images/06.jpg'
+    - alt: 'Minimalism'
+      url: '/images/05.jpg'
+    - alt: 'Minimalism'
+      url: '/images/08.jpg'
+    - alt: 'Minimalism'
+      url: '/images/03.jpg'
+    - alt: 'Minimalism'
+      url: '/images/09.jpg'
+    - alt: 'Minimalism'
+      url: '/images/04.jpg'
 
 
 #-------------------------------
