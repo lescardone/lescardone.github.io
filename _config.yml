@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 title: Living That Data Life
-logo: '/images/logos/Logo.png'.
+logo: '/images/logos/Logo.png'
 description: A Data Science Blog In Progress
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.livingthatdatalife.com"
