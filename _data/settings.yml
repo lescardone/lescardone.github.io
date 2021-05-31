@@ -1,7 +1,7 @@
 basic_settings:
-  site_title: Index
-  site_tagline: A minimal, fixed sidebar grid portfolio Jekyll theme.
-  favicon_image: /images/favicon.png
+  site_title: Leslie Cardone
+  site_tagline: 
+  favicon_image: /images/Logo_favicon.png
 
 header_settings:
   logo_image: 
@@ -54,7 +54,7 @@ social_settings:
   soundcloud_url: ''
   spotify_url: ''
   bandcamp_url: ''
-  linkedin_url: ''
+  linkedin_url: 'https://www.linkedin.com/in/lesliecardone/'
 
 color_settings:
   background_color: '#ffffff'
