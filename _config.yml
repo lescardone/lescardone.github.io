@@ -1,6 +1,6 @@
-site: Index Jekyll Theme
+site: Living That Data Life -- A Data Science Blog In Progress
 
-url: https://index.jekyllthemes.io
+url: www.lesliecardone.com
 baseurl: 
 
 collections:
