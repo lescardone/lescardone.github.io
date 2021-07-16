@@ -1,9 +1,11 @@
 ---
-title: About Me
+title: 
 subtitle:
 description: Follow my journey!
 featured_image: /images/leslie_img1_crop.jpeg
 ---
+
+![image](/images/logos/Logo.png){: style="float: left;" width="400;" style="padding: 1px"}  
 
 Hello! I'm Leslie, I've recently graduated from the Data Science and Machine Learning program offered by [Metis](https://www.thisismetis.com). 
 
