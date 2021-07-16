@@ -1,5 +1,5 @@
 ---
-title: 
+title: About Me
 subtitle:
 description: Follow my journey!
 featured_image: /images/leslie_img1_crop.jpeg
