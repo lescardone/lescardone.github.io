@@ -22,7 +22,7 @@ Scrolling through picture after picture of smiling faces and pretty diamonds on 
 
 The goal of this project is to collect loose diamond data, build a highly predictive linear regression model or linear regression model variation, and apply that model across diamond data from two separate websites. 
 
-I hypothesized that my model would perform poorly and consistently over-price the loose diamonds for sale on the wholesaler website, after all these diamonds are advertised as having unbeatably low prices.
+I hypothesized that my model would perform poorly and consistently over-price the loose diamonds for sale on the wholesaler website. After all, these diamonds are advertised as having unbeatably low prices.
 
 
 ## DATA
@@ -41,10 +41,10 @@ carat, cut, color, clarity, polish, culet, table %, depth %, symmetry, length to
 
 **FEATURES** 
 - **Carat**: the diamond's weight    
-- **Cut:** how well proportioned the diamonds dimensions are
+- **Cut:** how well proportioned the dimensions of the diamond are
 - **Color:** absence of color to light brown, the larger the carat the more visible the color
 - **Clarity:** assessment of small imperfections on the surface and within the stone
-- **Polish:** how smoothly the diamond has been polished and how defined the edges are, if any marks are visible from polishing wheel
+- **Polish:** how smoothly the diamond has been polished and how defined the edges are; if any marks are visible from the polishing wheel
 - **Culet:** the facet at the tip of a gemstone. The preferred culet is not visible, graded 'none.'
 - **Table %:** the largest facet of a gemstone, the width expressed as a percentage of its average diameter 
 - **Depth %:** the height of the gemstone measured from the culet to the table, divided by average girdle diameter
@@ -62,7 +62,7 @@ carat, cut, color, clarity, polish, culet, table %, depth %, symmetry, length to
 
 ## DESIGN
 
-I sacrificed interpretability in my model to create most predictive model I could within the linear regression framework. I added complexity by creating custom interaction terms, second degree polynomial terms for every feature, and all interactions terms. In the end I had 152 features.
+I sacrificed interpretability in my model to create the most predictive model I could within the linear regression framework. I added complexity by creating custom interaction terms, second-degree polynomial terms for every feature, and all interactions terms. In the end, I had 152 features.
 
 I scaled all my features using the Standard Scalar and used a lasso regression with an alpha/lambda of 0.1. Only several of my features were minimized to zero.
 
@@ -70,7 +70,7 @@ I used a validation set for my feature engineering and hyper-parameter tuning.
 
 
 ## MODEL SELECTION & METRICS
-I divided the Blue Nile data into train, validate, and test sections. I trained my model on the train set while checking for overfitting with the validate set. My model never seemed to be at risk of overfit so I did not use Kfold Cross Validation. 
+I divided the Blue Nile data into train, validate, and test sections. I trained my model on the train set while checking for overfitting with the validate set. My model never seemed to be at risk of overfitting so I did not use Kfold Cross Validation. 
 
 When I was happy with my model, I combined the Blue Nile train and validate sections into one section. I then fit my final model on those two sections.
 
@@ -96,7 +96,7 @@ In the very end, I applied my model to the Blue Nile test set and the Brilliance
 | Metric               | Dataset       | Score      |  
 |----------------------|---------------|------------|
 | R2                   | Test          | 0.87       |
-| RMSE                 | Test          | $1,003.68   |
+| RMSE                 | Test          | $1,003.68  |
 
 
 ![image](/images/regression/ppt_03.jpeg)
@@ -104,7 +104,7 @@ In the very end, I applied my model to the Blue Nile test set and the Brilliance
 
 ## FINDINGS
 
-The model performs well on the Brilliance data, and actually consistently over-prices a group of loose diamonds in the $500 to $5,000 range. There are a few points where the model really over-estimated the price. Upon further investigation, these few data points had the highest carat weight across the entire data set. The model had never seen this weight before.
+The model performs well on the Brilliance data and consistently over-prices a group of loose diamonds in the $500 to $5,000 range. There are a few points where the model really over-estimated the price. Upon further investigation, these few data points had the highest carat weight across the entire data set. The model had never seen this weight before.
 
 ![image](/images/regression/ppt_04.jpeg)
 

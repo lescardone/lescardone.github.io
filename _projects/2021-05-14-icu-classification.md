@@ -14,9 +14,10 @@ Photo Credit[^1]
 
 Github Repository for this project can be found [here](https://github.com/lescardone/classification-project/).
 
+
 ## ABOUT
 
-With hospital overwhelm across the United States during the COVID-19 pandmic, healthcare workers have struggled to treat an overwhelming amount of patients in critical condition. 
+With hospital overwhelm across the United States during the COVID-19 pandemic, healthcare workers have struggled to treat an overwhelming amount of patients in critical condition. 
 
 "Intensive Care Units (ICUs) often lack verified medical histories for incoming patients. A patient in distress or a patient who is brought in confused or unresponsive may not be able to provide information about chronic conditions such as heart disease, injuries, or diabetes. Medical records may take days to transfer, especially for a patient from another medical provider or system. Knowledge about chronic conditions such as diabetes can inform clinical decisions about patient care and ultimately improve patient outcomes." ([source](https://www.kaggle.com/c/widsdatathon2021/overview/description))
 
@@ -38,7 +39,7 @@ The target is binary.
 
 *BASELINE MODEL*
 
-I created two baseline logistic regression models. I selected logistic regression because I believed the probability % for each class could potentially aid doctures further.
+I created two baseline logistic regression models. I selected logistic regression because I believed the probability % for each class could potentially aid doctors further.
 
 The first model only used the feature with the highest correlation with the target (highest glucose concentration). The second model used the top 15 features most correlated with the target.
 
@@ -50,16 +51,13 @@ Features[^2] were selected for use in the final model by their correlation and p
 
 ![image](/images/classification/ppt_01.jpeg)
 
-
 *HANDLING MISSING VALUES*
 
-I trained a simple KNNClassifer (3 neighbors) on columns with no missing values (excluding target). I imputed NA values for the columns mentioned aove (36 in total) with the KNNClassifer prediction.  
-
+I trained a simple KNNClassifer (3 neighbors) on columns with no missing values (excluding target). I imputed NA values for the columns mentioned above (36 in total) with the KNNClassifer prediction.  
 
 *HYPERPARAMETER TUNING*  
 
-I set 20% of my data aside for my hold out set. The remaining 80% I divided into 80/20 train/validate. I performed a GridSearchCV to select values for class weights and C, optimizing for F1 and Recall. I selected my regularization method by validating manually.
-
+I set 20% of my data aside for my hold-out set. The remaining 80% I divided into 80/20 train/validate. I performed a GridSearchCV to select values for class weights and C, optimizing for F1 and Recall. I selected my regularization method by validating manually.
 
 
 ## FINDINGS
@@ -94,4 +92,4 @@ I would also look at the ROC curves for all five models (including my logistic r
 
 ## MISC
 
-[^2]: *FEATURE LIST* --ethnicity, gender, hospital_admit_source, icu_admit_source, icu_stay_type, icu_type, d1_sysbp_max, d1_diasbp_min, d1_sysbp_noninvasive_max, d1_diasbp_noninvasive_min, weight, bmi, age, h1_sysbp_max, h1_diasbp_min, h1_diasbp_max, d1_glucose_min, d1_glucose_max, h1_sysbp_noninvasive_max, h1_diasbp_noninvasive_min, h1_diasbp_noninvasive_max, d1_potassium_min, d1_potassium_max, d1_creatinine_min, d1_creatinine_max, d1_sodium_min, d1_bun_min, d1_bun_max, glucose_apache, d1_hematocrit_max, d1_hematocrit_min, d1_hemaglobin_min, d1_hemaglobin_max, d1_calcium_max, d1_hco3_min, sodium_apache, creatinine_apache, bun_apache, hematocrit_apache, h1_glucose_min, h1_glucose_max, arf_apache
+[^2]: *FEATURE LIST*   ethnicity, gender, hospital_admit_source, icu_admit_source, icu_stay_type, icu_type, d1_sysbp_max, d1_diasbp_min, d1_sysbp_noninvasive_max, d1_diasbp_noninvasive_min, weight, bmi, age, h1_sysbp_max, h1_diasbp_min, h1_diasbp_max, d1_glucose_min, d1_glucose_max, h1_sysbp_noninvasive_max, h1_diasbp_noninvasive_min, h1_diasbp_noninvasive_max, d1_potassium_min, d1_potassium_max, d1_creatinine_min, d1_creatinine_max, d1_sodium_min, d1_bun_min, d1_bun_max, glucose_apache, d1_hematocrit_max, d1_hematocrit_min, d1_hemaglobin_min, d1_hemaglobin_max, d1_calcium_max, d1_hco3_min, sodium_apache, creatinine_apache, bun_apache, hematocrit_apache, h1_glucose_min, h1_glucose_max, arf_apache
