@@ -1,7 +1,7 @@
 basic_settings:
   site_title: Leslie Cardone
-  site_tagline: 
-  favicon_image: /images/Logo_favicon.png
+  site_tagline: Living That Data Life
+  favicon_image: /images/logos/flavicon_yellow.png
 
 header_settings:
   logo_image: 
